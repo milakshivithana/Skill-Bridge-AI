@@ -1,0 +1,61 @@
+# ============================================
+# SkillBridge AI — .gitignore
+# ============================================
+
+# ---- ASP.NET Core / C# ----
+backend/**/bin/
+backend/**/obj/
+backend/**/*.user
+backend/**/*.suo
+backend/**/.vs/
+backend/**/appsettings.Development.json
+*.csproj.user
+backend/**/uploads/
+
+# ---- Secrets (NEVER commit these) ----
+appsettings.*.json
+!appsettings.json
+*.env
+.env
+.env.local
+.env.*.local
+.env.render
+
+# ---- React / Node ----
+web_app/node_modules/
+web_app/dist/
+web_app/.vite/
+web_app/coverage/
+web_app/.env
+web_app/.env.local
+
+# ---- Flutter / Dart ----
+mobile_app/.dart_tool/
+mobile_app/.flutter-plugins
+mobile_app/.flutter-plugins-dependencies
+mobile_app/build/
+mobile_app/.packages
+mobile_app/pubspec.lock
+mobile_app/android/.gradle/
+mobile_app/android/local.properties
+mobile_app/ios/Pods/
+mobile_app/ios/.symlinks/
+
+# ---- Python AI Service ----
+ai_service/__pycache__/
+ai_service/**/__pycache__/
+ai_service/.venv/
+ai_service/venv/
+ai_service/*.pyc
+ai_service/.env
+ai_service/**/*.egg-info/
+
+# ---- EF Core Migrations (keep these) ----
+# backend/**/Migrations/   <-- intentionally NOT ignored
+
+# ---- OS / IDE ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/settings.json
+*.swp

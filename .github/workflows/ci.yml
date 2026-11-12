@@ -1,0 +1,30 @@
+name: SkillBridge CI Pipeline
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main, dev ]
+
+jobs:
+  build-and-test-backend:
+    name: Build & Test ASP.NET Core Backend
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore Backend Dependencies
+        run: dotnet restore backend/SkillBridge.sln
+
+      - name: Build Backend Solution
+        run: dotnet build backend/SkillBridge.sln --configuration Release --no-restore
+
+      - name: Run Backend Automated Tests
+        run: dotnet test backend/SkillBridge.sln --configuration Release --no-build --verbosity normal

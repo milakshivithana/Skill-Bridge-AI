@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillBridge.Api", "SkillBridge.Api\SkillBridge.Api.csproj", "{514BB540-2D23-4403-B345-B141DC5803DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillBridge.Tests", "SkillBridge.Tests\SkillBridge.Tests.csproj", "{BF943D4C-764D-4A68-8CD5-0450755C2155}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{514BB540-2D23-4403-B345-B141DC5803DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{514BB540-2D23-4403-B345-B141DC5803DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{514BB540-2D23-4403-B345-B141DC5803DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{514BB540-2D23-4403-B345-B141DC5803DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF943D4C-764D-4A68-8CD5-0450755C2155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF943D4C-764D-4A68-8CD5-0450755C2155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF943D4C-764D-4A68-8CD5-0450755C2155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF943D4C-764D-4A68-8CD5-0450755C2155}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
